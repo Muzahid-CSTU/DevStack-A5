@@ -7,7 +7,15 @@ const Banner = () => {
                 <div className='col-span-7 grid grid-rows-1 items-center'>
                     <div className='grid grid-rows-8  h-[326px] pr-8'>
                         <div className='pb-6 row-span-4'>
-                            <h1 className='font-semibold text-6xl'>Build Your Ideal <br />Development Stack</h1>
+                            <h1 className='font-semibold text-6xl'>
+                                <span >
+                                    Build Your Ideal
+                                </span> <br />
+                                <span className="bg-gradient-to-r from-[#ff5722] via-[#d81b7e] to-[#7c3aed] bg-clip-text text-transparent">
+                                    Development Stack
+                                </span>
+                                
+                            </h1>
                         </div>
                         <div className='row-span-3 pr-1.27 pb-10 text-lg font-normal'>
                             <p>Explore frontend, backend, database, and tooling options,compare them side by side, and put together the stack that fits your next project.</p>
