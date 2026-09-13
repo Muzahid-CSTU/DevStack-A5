@@ -30,7 +30,7 @@
     "badge": "Fast"
   },
   {
-    "id": "express",
+    "id": "express--",
     "name": "Express.js",
     "category": "Backend",
     "description": "A lightweight Node.js framework for building APIs and web applications quickly.",
@@ -50,7 +50,7 @@
     "badge": "Top SQL"
   },
   {
-    "id": "mongodb",
+    "id": "mongodb--",
     "name": "MongoDB",
     "category": "Database",
     "description": "A flexible NoSQL database designed for working with document-oriented data at scale.",
@@ -80,7 +80,7 @@
     "badge": "Trending"
   },
   {
-    "id": "python",
+    "id": "python--",
     "name": "Python",
     "category": "Language",
     "description": "A beginner-friendly and versatile language widely used in web development, automation, data science, and AI.",
@@ -110,7 +110,7 @@
     "badge": "Containers"
   },
   {
-    "id": "kubernetes",
+    "id": "kubernetes--",
     "name": "Kubernetes",
     "category": "DevOps",
     "description": "An open-source platform for automating the deployment, scaling, and management of containers.",
@@ -118,35 +118,5 @@
     "rating": 4.7,
     "difficulty": "Advanced",
     "badge": "Containers"
-  },
-  {
-    "id": "git",
-    "name": "Git",
-    "category": "Tools",
-    "description": "A distributed version control system for tracking code changes and collaborating on software projects.",
-    "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": "github",
-    "name": "GitHub",
-    "category": "Tools",
-    "description": "A developer platform for hosting repositories, collaborating on code, and managing software projects.",
-    "icon": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Essential"
-  },
-  {
-    "id": "vscode",
-    "name": "VS Code",
-    "category": "Tools",
-    "description": "A lightweight and extensible code editor with powerful features for modern software development.",
-    "icon": "https://techicons.dev/icons/visual-studio-code.png",
-    "rating": 4.9,
-    "difficulty": "Beginner-Friendly",
-    "badge": "Developer Favorite"
   }
 ]

@@ -5,6 +5,7 @@ import Nav from './components/nav.tsx'
 import Banner from './components/Banner.tsx'
 import MainLayout from './components/MainLayout.tsx'
 import TechList from './components/TechList.tsx'
+import Footer from './components/Footer.tsx'
 import type { ItechList } from './components/Types/techListType.ts'
 
 const techListFetch = async (): Promise<ItechList> => {
@@ -27,6 +28,7 @@ function App() {
           techListPromise={techListPromise}
         />
       </Suspense>
+      <Footer />
 
     </>
   )
