@@ -5,24 +5,41 @@ import TechCard from '../components/TechCard.tsx'
 import Sideber from './Sideber.tsx';
 
 interface techListProps {
-  techListPromise: Promise<ItechList[]>;
+    techListPromise: Promise<ItechList[]>;
+    stackNumber: number;
+    setStackNumber: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const TechList = ({techListPromise} : techListProps) => {
+const TechList = ({ techListPromise, stackNumber, setStackNumber }: techListProps) => {
     const TechList = use(techListPromise);
-    console.log(TechList);
+
+    const [selectedTechs, setSelectedTechs] = useState<string[]>([]);
+
     return (
         <div className='container mx-auto max-w-6xl px-8'>
             <div className='grid grid-cols-10 gap-4 mt-10'>
-                <div className='col-span-8'>
-                    <TechCard TechList={TechList} />
-                </div>
-                <div className='col-span-2 border'>
-                    <Sideber />
-                </div>
-            </div>
 
-            
+                <div className='col-span-8'>
+                    <TechCard
+                        TechList={TechList}
+                        selectedTechs={selectedTechs}
+                        setSelectedTechs={setSelectedTechs}
+                        stackNumber={stackNumber}
+                        setStackNumber={setStackNumber}
+                    />
+                </div>
+
+                <div className='col-span-2 border'>
+                    <Sideber
+                        TechList={TechList}
+                        selectedTechs={selectedTechs}
+                        setSelectedTechs={setSelectedTechs}
+                        stackNumber={stackNumber}
+                        setStackNumber={setStackNumber}
+                    />
+                </div>
+
+            </div>
         </div>
     );
 };
