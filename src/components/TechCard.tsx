@@ -11,6 +11,15 @@ interface TechCardProps {
     setStackNumber: React.Dispatch<React.SetStateAction<number>>;
 }
 
+const badgeColorMap: Record<string, string> = {
+    "Popular": "bg-blue-100 text-blue-700",
+    "Versatile": "bg-green-100 text-green-700",
+    "Fast": "bg-orange-100 text-orange-700",
+    "SSR / Edge": "bg-purple-100 text-purple-700",
+    "Standard": "bg-emerald-100 text-emerald-700",
+    "Top SQL": "bg-sky-100 text-sky-700",
+};
+
 const TechCard = ({TechList, selectedTechs, setSelectedTechs, stackNumber, setStackNumber}: TechCardProps) => {
 
     const handleSelectStack = (name: string) => {
@@ -31,7 +40,7 @@ const TechCard = ({TechList, selectedTechs, setSelectedTechs, stackNumber, setSt
                     <div key={Tech.name} className="border border-gray-200 rounded-2xl p-4 bg-white">
                         <div className="flex justify-between items-start mb-4">
                             <img src={Tech.icon} alt={Tech.name} className="h-9 w-9 object-contain"/>
-                            <div className="text-sm border rounded-full px-3 py-1">
+                            <div className={`text-sm rounded-full px-3 py-1 ${badgeColorMap[Tech.badge] ?? "bg-gray-100 text-gray-700"}`}>
                                 {Tech.badge}
                             </div>
                         </div>
