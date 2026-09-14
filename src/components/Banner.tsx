@@ -7,7 +7,7 @@ const Banner = () => {
                 <div className='col-span-1 md:col-span-7 grid grid-rows-1 items-center'>
                     <div className='flex flex-col gap-6 md:grid md:grid-rows-8 h-auto md:h-[326px] pr-0 md:pr-8'>
                         <div className='md:pb-6 md:row-span-4'>
-                            <h1 className='font-semibold text-3xl sm:text-4xl md:text-6xl text-center md:text-left'>
+                            <h1 className='font-extrabold text-3xl sm:text-4xl md:text-6xl text-center md:text-left'>
                                 <span > Build Your Ideal</span> <br />
                                 <span className="text-brand-gradient">Development Stack</span>
                             </h1>

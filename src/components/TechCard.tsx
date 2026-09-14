@@ -64,7 +64,7 @@ const TechCard = ({TechList, selectedTechs, setSelectedTechs, stackNumber, setSt
                                 </div>
                             </div>
                         </div>
-                        <button onClick={() => handleSelectStack(Tech.name)} className={`btn w-full ${
+                        <button onClick={() => handleSelectStack(Tech.name)} className={`btn w-full rounded-2xl ${
                                 isSelected ? 'bg-gray-100 text-black border border-gray-200' : 'bg-black text-white'
                             }`}
                         >
