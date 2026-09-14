@@ -17,9 +17,9 @@ const TechList = ({ techListPromise, stackNumber, setStackNumber }: techListProp
 
     return (
         <div className='container mx-auto max-w-6xl px-8'>
-            <div className='grid grid-cols-10 gap-4 mt-10'>
+            <div className='grid grid-cols-1 md:grid-cols-10 gap-4 mt-10'>
 
-                <div className='col-span-8'>
+                <div className='md:col-span-8'>
                     <TechCard
                         TechList={TechList}
                         selectedTechs={selectedTechs}
@@ -29,7 +29,7 @@ const TechList = ({ techListPromise, stackNumber, setStackNumber }: techListProp
                     />
                 </div>
 
-                <div className='col-span-2 border'>
+                <div className='md:col-span-2 border'>
                     <Sideber
                         TechList={TechList}
                         selectedTechs={selectedTechs}

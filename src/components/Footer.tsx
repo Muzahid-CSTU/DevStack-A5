@@ -5,10 +5,10 @@ const Footer = () => {
     return (
         <div>
             <div className="divider"></div>
-            <div className='container mx-auto max-w-6xl px-8'>
-                <div className='grid grid-cols-5'>
-                    <div className='col-span-2 grid grid-rows-3 gap-3 pr-4'>
-                        <img src={logo} alt="" />
+            <div className='container mx-auto max-w-6xl px-6 md:px-8'>
+                <div className='grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-0'>
+                    <div className='md:col-span-2 grid grid-rows-3 gap-3 md:pr-4 text-center md:text-left items-center md:items-stretch'>
+                        <img src={logo} alt="" className='mx-auto md:mx-0 w-32 md:w-auto' />
                         <p>
                             Curated tools, technologies, and resources for developers building modern software.
                         </p>
@@ -18,7 +18,7 @@ const Footer = () => {
                             <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
                         </div>
                     </div>
-                    <div className='col-span-1'>
+                    <div className='hidden md:block col-span-1'>
                         <h1>PRODUCT</h1>
                         <div className='mt-4 grid grid-rows-3 gap-1 pb-4.75'>
                             <p>Home</p>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <p>Projects</p>
                         </div>
                     </div>
-                    <div className='col-span-1'>
+                    <div className='hidden md:block col-span-1'>
                         <h1>COMPANY</h1>
                         <div className='mt-4 grid grid-rows-3 gap-1 pb-4.75'>
                             <p>About</p>
@@ -34,7 +34,7 @@ const Footer = () => {
                             <p>Careers</p>
                         </div>
                     </div>
-                    <div className='col-span-1'>
+                    <div className='hidden md:block col-span-1'>
                         <h1>LEGAL</h1>
                         <div className='mt-4 grid grid-rows-3 gap-1 pb-4.75'>
                             <p>Privacy Policy</p>
@@ -43,10 +43,12 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="divider"></div>
-                <div className='grid grid-cols-12 gap-4 pt-6'>
-                    <p className='col-span-10'>© 2026 Dev Stack. All rights reserved.</p>
-                    <p className='col-span-1'>Privacy</p>
-                    <p className='col-span-1'>Terms</p>
+                <div className='flex flex-row justify-between items-center gap-2 pt-6'>
+                    <p>© 2026 Dev Stack. All rights reserved.</p>
+                    <div className='flex gap-4'>
+                        <p>Privacy</p>
+                        <p>Terms</p>
+                    </div>
                 </div>
             </div>
         </div>
