@@ -1,5 +1,6 @@
 import React from 'react';
 import type { ItechList } from './Types/techListType';
+import { toast } from 'react-toastify';
 
 interface SideberProps {
     TechList: ItechList[];
@@ -14,11 +15,13 @@ const Sideber = ({TechList,selectedTechs,setSelectedTechs,stackNumber,setStackNu
     const handleRemove = (name: string) => {
         setSelectedTechs(selectedTechs.filter((tech) => tech !== name));
         setStackNumber(stackNumber - 1);
+        toast.info(`${name} removed from stack`);
     };
 
     const handleRemoveAll = () => {
         setSelectedTechs([]);
         setStackNumber(0);
+        toast.info('All technologies removed from stack');
     };
 
     return (

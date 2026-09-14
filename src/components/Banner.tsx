@@ -8,13 +8,8 @@ const Banner = () => {
                     <div className='flex flex-col gap-6 md:grid md:grid-rows-8 h-auto md:h-[326px] pr-0 md:pr-8'>
                         <div className='md:pb-6 md:row-span-4'>
                             <h1 className='font-semibold text-3xl sm:text-4xl md:text-6xl text-center md:text-left'>
-                                <span >
-                                    Build Your Ideal
-                                </span> <br />
-                                <span className="bg-linear-to-r from-[#ff5722] via-[#d81b7e] to-[#7c3aed] bg-clip-text text-transparent">
-                                    Development Stack
-                                </span>
-                                
+                                <span > Build Your Ideal</span> <br />
+                                <span className="text-brand-gradient">Development Stack</span>
                             </h1>
                         </div>
                         <div className='md:row-span-3 pr-0 md:pr-1.27 md:pb-10 text-base md:text-lg font-normal text-center md:text-left'>

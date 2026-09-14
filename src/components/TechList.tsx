@@ -18,7 +18,7 @@ const TechList = ({ techListPromise, stackNumber, setStackNumber }: techListProp
     return (
         <div className='container mx-auto max-w-6xl px-8'>
             <div className='grid grid-cols-1 md:grid-cols-10 gap-4 mt-10 items-start'>
-
+                
                 <div className='md:col-span-8'>
                     <TechCard
                         TechList={TechList}
