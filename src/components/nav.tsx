@@ -3,7 +3,7 @@ import { FiMenu } from "react-icons/fi";
 
 const Nav = () => {
     return (
-        <nav className=' bg-white h-20 border border-[#f1f5f9FF] flex items-center'>
+        <nav className=' bg-white h-20 border border-[#f1f5f9FF] flex items-center sticky top-0 z-50'>
             <div className='px-8 h-8 container mx-auto max-w-6xl flex justify-between items-center'>
                 <FiMenu className='text-2xl text-gray-700 md:hidden' />
                 <img src={logo} alt="logo" />
