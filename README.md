@@ -22,22 +22,29 @@ This was made as an assignment to practice React. The technology data comes from
 ## React Questions
 
 **1. What is JSX, and why is it used in React?**
+
 JSX lets us write HTML-like code inside JavaScript. It is used because it is easier to write and read UI code this way, instead of using React.createElement() for everything.
 
 **2. What is the difference between props and state?**
+
 Props are data sent to a component from its parent, and the component cannot change them. State is data that a component keeps for itself and can change using useState.
 
 **3. What does the useState hook do, and where did you use it in this project?**
+
 useState lets a component store a value and update the UI when that value changes. I used it to store the technology list, the items added to the stack, and the loading state.
 
 **4. What does the useEffect hook do, and why did you need it to load the JSON data?**
+
 useEffect runs some code after the component renders, like fetching data. I used it to load the JSON data once when the page loads, by giving it an empty dependency array [].
 
 **5. Why does every item in a .map() list need a unique key prop?**
+
 The key helps React know which item is which in a list. This helps React update only the changed item instead of the whole list, and avoids bugs when items are added or removed.
 
 **6. What is conditional rendering? Show one place you used it.**
+
 Conditional rendering means showing different content based on a condition. I used this in the "Your Stack" section — if the stack is empty, it shows a message saying no technology is selected, otherwise it shows the list of added items.
 
 **7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?**
+
 The parent sends data to the child using props, like <TechCard tech={tech} />. To send data back, the parent passes a function as a prop, like onAddToStack, and the child calls that function when needed, for example on a button click.
